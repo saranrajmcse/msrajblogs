@@ -10,6 +10,7 @@ db.collection("blogs").get().then((blogs) => {
 
 const createBlog = (blog) => {
     let data = blog.data();
+    console.log(data); // Debug: Log the data to verify
     blogSection.innerHTML += `
     <div class="blog-card">
         <img src="${data.bannerImage}" class="blog-image" alt="">
